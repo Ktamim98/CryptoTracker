@@ -30,7 +30,7 @@ class CoinImageService{
     private func getCoinImage(){
         if let savedImage = fileManager.getImage(imageName: imageName, folderName: folderName){
             image = savedImage
-           
+          
         }else{
             downloadCoinImage()
            
@@ -50,7 +50,7 @@ class CoinImageService{
                 guard let self = self, let downloadImage = returnImage else {return}
                 self.image = downloadImage
                 self.imageSubscription?.cancel()
-                        self.fileManager.saveImage(image: downloadImage, imageName: self.imageName, folderName: self.folderName)
+                self.fileManager.saveImage(image: downloadImage, imageName: self.imageName, folderName: self.folderName)
             })
         
         

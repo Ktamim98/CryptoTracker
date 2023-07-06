@@ -20,7 +20,12 @@ struct HomeView: View {
                 
                 homeHeader
                 
+                HomeStateView(showPortfolio: $showPortfolio)
+                
+                SearchBarView(searchText: $viewModel.searchText)
+                
                 columnHeadline
+                
                
                 if !showPortfolio{
                    allCoinsList
