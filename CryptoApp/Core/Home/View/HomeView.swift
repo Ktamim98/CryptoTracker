@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @State private var showPortfolio: Bool = false
     @State private var showPortfolioView: Bool = false
+    @State private var showSettingsView: Bool = false
     @EnvironmentObject private var viewModel: HomeViewModel
     
     @State private var selectedCoin: CoinModel? = nil
@@ -50,6 +51,9 @@ struct HomeView: View {
                 
                     Spacer(minLength: 0)
             }
+            .sheet(isPresented: $showSettingsView, content: {
+                SettingsView()
+            })
         }
         .background(
             NavigationLink(destination: DetailLodingView(coin: $selectedCoin), isActive: $showDetailView, label: {
@@ -77,6 +81,9 @@ extension HomeView{
                 .onTapGesture {
                     if showPortfolio{
                         showPortfolioView.toggle()
+                    }
+                    else{
+                        showSettingsView.toggle()
                     }
                 }
                 .background(CircleButtonAnimationView(animate: $showPortfolio))
