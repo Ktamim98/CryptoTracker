@@ -31,6 +31,10 @@ struct PortfolioView: View {
                    
                 }
             }
+            .background(
+                Color.theme.background
+                    .ignoresSafeArea()
+            )
             .navigationTitle("Edit Portfoloi")
             .toolbar(content: {
                 ToolbarItem(placement: .navigationBarLeading){
