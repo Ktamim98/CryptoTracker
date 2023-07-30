@@ -4,7 +4,7 @@ Crypto App is a user-friendly and feature-rich mobile application for tracking c
 
 ## ScreenVideo
 
-
+https://github.com/Ktamim98/CryptoTracker/assets/124142522/2b37f258-1f10-4ae7-b986-92f81f479053
 
 
 ## Features
