@@ -1,6 +1,6 @@
 # CryptoTracker
 ## Introduction
-Crypto App is a user-friendly and feature-rich mobile application for tracking cryptocurrency prices, managing your crypto portfolio, and staying updated with the latest market trends.
+CryptoTracker is a user-friendly and feature-rich mobile application for tracking cryptocurrency prices, managing your crypto portfolio, and staying updated with the latest market trends.
 
 ## ScreenVideo
 
